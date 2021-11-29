@@ -4,7 +4,7 @@ public class Board {
  
 	private int[][] board; // holds state of game
 	private Random rnd = new Random(0); // setup random # generator
-	private int tilesOccupied = 0;
+	private int tilesOccupied = 0; //potential instance variables to keep track of open spots
 	private int numOpenSpaces = 16; 
 	
 	/* default constructor for board */
