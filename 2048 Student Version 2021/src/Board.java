@@ -55,11 +55,8 @@ public class Board {
 
 	/*
 	 * set one of the empty spaces (at random)
-	 * 
 	 * to a 2 or 4 (90/10 chance). an empty spot is defined to be a 0 element
-	 * 
 	 * Must use the Random class object rnd.
-	 * 
 	 * Example Use of rnd object.
 	 * 
 	 * int randomNum = rnd.nextInt(10); //returns a number in range [0 10) (not
@@ -83,15 +80,11 @@ public class Board {
 	/*
 	 * 
 	 * Given an array of integers, slide all non-zero elements to the right.
-	 * 
 	 * zero elements are considered open spots.
-	 * 
 	 * example:
 	 * 
 	 * [0 2 0 2]->[0 0 2 2]
-	 * 
 	 * [2 8 0 2]->[0 2 8 2]
-	 * 
 	 * [4 0 0 0]->[0 0 0 4]
 	 */
 
@@ -122,9 +115,7 @@ public class Board {
 
 	/**
 	 * Given an array of integers, slide all non-zero elements to the left.
-	 * 
 	 * zero elements are considered open spots.
-	 * 
 	 * example:
 	 * 
 	 * [0 2 0 2] -> [2 2 0 0]
@@ -205,9 +196,7 @@ public class Board {
 
 	/*
 	 * slide all the numbers down so that any
-	 * 
 	 * empty space is at the top
-	 * 
 	 * You must use slideDown and getCol for full credit.
 	 */
 
@@ -218,13 +207,10 @@ public class Board {
 	/*
 	 * Given the 2D array, board, combineRight will take adjacent numbers that
 	 * are the same and combine them (add them).
-	 * 
 	 * After adding them together, one of the numbers is zeroed out. For
 	 * example, if row 0 contained [0 0 4 4],
-	 * 
 	 * a call to combineRight will produce [0 0 0 8]. If row 1 contained [2 2 2
 	 * 2], a call to combineRight will
-	 * 
 	 * produce [0 4 0 4].
 	 * 
 	 * Notice that the left element is zeroed out.
