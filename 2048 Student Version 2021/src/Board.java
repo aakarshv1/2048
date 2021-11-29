@@ -4,8 +4,8 @@ public class Board {
  
 	private int[][] board; // holds state of game
 	private Random rnd = new Random(0); // setup random # generator
-	private int tilesOccupied = 0; //potential instance variables to keep track of open spots
-	private int numOpenSpaces = 16; 
+	
+	//What instance variable can you add to keep track of the size or the number of tiles occupied?
 	
 	/* default constructor for board */
 	// constructors must match exactly the name
