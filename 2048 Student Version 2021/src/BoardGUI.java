@@ -21,7 +21,7 @@ public class BoardGUI extends JPanel implements KeyListener, ActionListener{
 	public BoardGUI() {
 		b = new Tile[4][4];
 		colors = new Color[20];
-		t = new Timer(1000,this);
+		t = new Timer(10,this);
 		setup(new int[][]{});
 		t.start();	//calls a method every second
 	}	
@@ -29,7 +29,7 @@ public class BoardGUI extends JPanel implements KeyListener, ActionListener{
 	public BoardGUI(int[][] d) {
 		b = new Tile[4][4];
 		colors = new Color[20];
-		t = new Timer(1000,this);
+		t = new Timer(10,this);
 		setup(d);
 		t.start();	//calls a method every second
 	}		
@@ -101,18 +101,20 @@ public class BoardGUI extends JPanel implements KeyListener, ActionListener{
 			
 			//slide right
 			case 39:
-				data.slideRight();
+				data.right();
 				break;
 				
 			case 37: //left
-				data.slideLeft();
+				data.left();
 				break;
 			case 38: //up
 				//what to do if keyCode is 38?
+				data.up();
 				
 				
 				break;
 			case 40: //down
+				data.down();
 				
 				break;
 		}
@@ -135,13 +137,21 @@ public class BoardGUI extends JPanel implements KeyListener, ActionListener{
 		// TODO Auto-generated method stub
 		// bot algorithm - decide the next move
 		
-		/*
-		data.left();
+		
+		double p = Math.random();
+        if (p < 0.5)
+            data.left();
+        if (p >= 0.4 && p < 0.9)
+            data.down();
+        if (p >= 0.9 && p < 0.95)
+            data.right();
+        else
+            data.up();
 		
 		//every move, call populate and update
 		data.populateOne();
 		update();
-		*/
+		
 		
 	}
 
